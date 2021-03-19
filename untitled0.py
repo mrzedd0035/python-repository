@@ -30,7 +30,7 @@ def main():
         students.append(student)
        
     for student in students:
-        student['total'] = student['kor'] + student['eng'] + student['math']
+        student['total'] = student['중간고사'] + student['기말고사'] + student['']
         student['avg'] = student['total'] / 3   
           
     sorted_students = sorted(students, key = lambda x : x['total'], reverse=True)
